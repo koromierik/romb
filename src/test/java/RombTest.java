@@ -1,3 +1,5 @@
+import org.testng.annotations.BeforeTest;
+
 public class RombTest {
     Romb romb;
 
