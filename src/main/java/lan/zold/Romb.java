@@ -3,7 +3,7 @@
 * Author: Körömi Erik
 * Copyright: 2024, Körömi Erik
 * Date: 2024-01-10
-* Web: https://github.com/
+* Web: https://github.com/koromierik/romb
 * Licenc: MIT
 *
 */
