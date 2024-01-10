@@ -2,6 +2,8 @@
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import lan.zold.Romb;
+
 public class RombTest {
     Romb romb;
 
