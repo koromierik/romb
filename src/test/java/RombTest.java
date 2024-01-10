@@ -59,8 +59,23 @@ public class RombTest {
     }
 
     @Test
-        public void calcPerim_11() {
+    public void calcPerim_11() {
         double actual = this.romb.calcPerim(11);
         double expected = 44.0;
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void calcPerim_12() {
+        double actual = this.romb.calcPerim(12);
+        double expected = 48.0;
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void calcPerim_13() {
+        double actual = this.romb.calcPerim(13);
+        double expected = 52.0;
+        Assert.assertEquals(expected, actual);
+    }
+}
