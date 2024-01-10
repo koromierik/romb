@@ -27,7 +27,14 @@ public class RombTest {
     public void calcArea_20_25() {
         double area = this.romb.calcArea(20, 25);
         double expected = 250;
-        Assert.assertEquals(actual, expected,0.1 );
+        Assert.assertEquals(actual, expected, 0.1);
     }
 
+    @Test
+    public void calcArea_35_40() {
+        double area = this.romb.calcArea(35, 40);
+        double expected = 700;
+        Assert.assertEquals(actual, expected, 0.1);
+
+    }
 }
