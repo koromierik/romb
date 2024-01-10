@@ -1,4 +1,14 @@
+/*
+* File: Romb.java
+* Author: Körömi Erik
+* Copyright: 2024, Körömi Erik
+* Date: 2024-01-10
+* Web: https://github.com/
+* Licenc: MIT
+*
+*/
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -15,8 +25,8 @@ public class RombTest {
 
     @Test
     public void testCalcArea() {
-        double area = this.romb.calcArea();
-
+        double area = this.romb.calcArea(20.0);
+        double expected = Assert.assertEquals(actual, expected, );
     }
 
 }
