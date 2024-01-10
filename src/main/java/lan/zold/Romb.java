@@ -10,8 +10,12 @@
 
 package lan.zold;
 
+import java.util.InputMismatchException;
+
 public class Romb {
-    public double calcArea(double side, double angle) {
-        return 0.0;
+    public double calcArea(double side, double angle){
+        if (side<=0 || angle<=0) {
+           throw new InputMismatchException(); 
+        
     }
 }
