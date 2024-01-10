@@ -26,17 +26,27 @@ public class RombTest {
 
     @Test
     public void calcArea_20_25() {
-        double area = this.romb.calcArea(20, 25);
+        double actual = this.romb.calcArea(20, 25);
         double expected = 250;
         Assert.assertEquals(actual, expected, 0.1);
     }
 
     @Test
     public void calcArea_35_40() {
-        double area = this.romb.calcArea(35, 40);
+        double actual = this.romb.calcArea(35, 40);
         double expected = 700;
         Assert.assertEquals(actual, expected, 0.1);
 
     }
 
+    @Test(expectedExceptions = InputMismatchException.class)
+    public void calcArea_20_0() {
+        this.romb.calcArea(20, 0);
+    }
+
+    @Test(expectedExceptions = InputMismatchException.class)
+    public void calcArea_0_30() {
+        this.romb.calcArea(0, 30);
+
+    }
 }
