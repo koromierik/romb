@@ -11,6 +11,7 @@
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import java.util.InputMismatchException;
 
 import lan.zold.Romb;
 
@@ -37,4 +38,5 @@ public class RombTest {
         Assert.assertEquals(actual, expected, 0.1);
 
     }
+
 }
