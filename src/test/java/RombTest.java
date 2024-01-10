@@ -40,6 +40,7 @@ public class RombTest {
     }
 
     @Test(expectedExceptions = InputMismatchException.class)
+
     public void calcArea_20_0() {
         this.romb.calcArea(20, 0);
     }
@@ -49,4 +50,17 @@ public class RombTest {
         this.romb.calcArea(0, 30);
 
     }
-}
+
+    @Test
+    public void calcPerim_10() {
+        double actual = this.romb.calcPerim(10);
+        double expected = 40.0;
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+        public void calcPerim_11() {
+        double actual = this.romb.calcPerim(11);
+        double expected = 44.0;
+        Assert.assertEquals(expected, actual);
+    }
